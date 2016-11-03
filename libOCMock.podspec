@@ -30,10 +30,10 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target  = '9.0'
 
-    s.source_files = 'OCMock/*.h'
+    s.source_files = 'Headers'
 #  s.source_files = 'OCMock'
 
-#  s.public_header_files = 'OCMock'
+#  s.public_header_files = 'Headers'
 
 s.preserve_paths = 'libOCMock.a'
 s.library = 'OCMock'
