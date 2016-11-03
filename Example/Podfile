@@ -1,6 +1,0 @@
-use_frameworks!
-target 'libOCMock_Tests' do
-  pod 'libOCMock', :path => '../'
-  
-  
-end
