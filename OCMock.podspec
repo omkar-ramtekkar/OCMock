@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'libOCMock'
+  s.name             = 'OCMock'
   s.version          = '0.1.0'
   s.summary          = 'This description is used to generate tags and improve search results'
 
@@ -18,26 +18,28 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Think: What does it do? Why did you write it? What is the focus?
+Think: What does it do? Why did you write it? What is the focus?
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/libOCMock'
+  s.homepage         = 'https://github.com/omkar-ramtekkar/OCMock'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Omkar Ramtekkar' => 'omkar.ramtekkar@gmail.com' }
-  s.source           = { :git => 'https://github.com/omkar-ramtekkar/libOCMock.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/omkar-ramtekkar/OCMock.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target  = '9.0'
 
-    s.source_files = 'Headers'
+    s.source_files = 'OCMock/*.h'
 #  s.source_files = 'OCMock'
 
-#  s.public_header_files = 'Headers'
+#  s.public_header_files = 'OCMock'
 
+s.vendored_libraries = 'libOCMock.a'
 s.preserve_paths = 'libOCMock.a'
 s.library = 'OCMock'
-s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/libOCMock' }
+s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/OCMock' }
 
 
 end
